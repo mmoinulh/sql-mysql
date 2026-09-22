@@ -3,7 +3,7 @@
 -- So we need to reorder it in order to get back to normal.
 
 -- This sql will return next value for id column if you don't have one.
-ALTER TABLE tablename AUTO_INCREMENT = 1
+ALTER TABLE tablename AUTO_INCREMENT = 1;
 
 -- OR
 
@@ -20,3 +20,8 @@ DROP TABLE category;
 -- Step 3: Rename the temporary table to the original table name
 ALTER TABLE temp_category
 RENAME TO category;
+
+
+-- * Delete all data from a table
+
+DELETE FROM table_name;
